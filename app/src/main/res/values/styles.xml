@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    !-- Custom BottomNavigationView Item Style -->
+    <style name="CustomBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconSize">24dp</item> <!-- Size of the icon -->
+        <item name="itemTextAppearanceActive">@style/CustomTextAppearance</item>
+        <item name="itemTextAppearanceInactive">@style/CustomTextAppearance</item>
+        <item name="itemPaddingBottom">5dp</item>
+    </style>
+
+    <!-- Custom Text Appearance -->
+    <style name="CustomTextAppearance" parent="TextAppearance.AppCompat.Caption">
+<!--        <item name="android:paddingTop">6dp</item> &lt;!&ndash; Adjust this for gap &ndash;&gt;-->
+        <item name="android:textSize">12sp</item> <!-- Size of the text -->
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Card.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

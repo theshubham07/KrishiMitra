@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.About"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvaboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@color/theme"
+
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvaboutus"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/content">
+
+
+        <View
+            android:id="@+id/divider_3"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/theme"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Aniketcard" />
+
+
+        <View
+            android:id="@+id/divider_4"
+            android:layout_width="80dp"
+            android:layout_height="2dp"
+            android:background="@color/theme"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/Aniketcard"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/Prblm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Problem Statement"
+            android:textColor="@color/theme"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_3"
+            app:layout_constraintEnd_toStartOf="@+id/divider_4"
+            app:layout_constraintStart_toEndOf="@+id/divider_3"
+            app:layout_constraintTop_toTopOf="@+id/divider_3" />
+
+        <TextView
+            android:id="@+id/statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/problemstatement"
+            android:textColor="@color/theme"
+            android:textSize="15sp"
+            android:textAlignment="textStart"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Prblm"
+            app:layout_constraintBottom_toTopOf="@id/CropsSupport"
+            />
+
+                <LinearLayout
+                    android:id="@+id/CropsSupport"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/statement"
+                    app:layout_constraintEnd_toStartOf="parent"
+                    app:layout_constraintStart_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/madewith"
+                    >
+
+                    <TextView
+                        android:text="🌱 Crops We Support"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TableLayout
+                        android:id="@+id/cropTable"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:stretchColumns="*"
+                        android:shrinkColumns="*"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/madewith"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:text="@string/developedby"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/theme"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="50dp"
+                    app:layout_constraintTop_toBottomOf="@+id/CropsSupport"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <View
+            android:id="@+id/divider_1"
+            android:layout_width="110dp"
+            android:layout_height="2dp"
+            android:background="@color/theme"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <View
+            android:id="@+id/divider_2"
+            android:layout_width="110dp"
+            android:layout_height="2dp"
+            android:background="@color/theme"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/or_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Developers"
+            android:textColor="@color/theme"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+            app:layout_constraintEnd_toStartOf="@+id/divider_2"
+            app:layout_constraintStart_toEndOf="@+id/divider_1"
+            app:layout_constraintTop_toTopOf="@+id/divider_1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/adarshcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="5dp"
+            android:background="@drawable/splashbackground"
+            app:layout_constraintTop_toBottomOf="@id/divider_1"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/adarsh_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/adarsh"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/adarsh_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adarsh Mishra"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/theme"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_constraintStart_toEndOf="@id/adarsh_pic"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/adarsh_linkedin_logo"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/linkedin_logo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/adarsh_name"
+                    app:layout_constraintStart_toEndOf="@id/adarsh_pic"
+                    />
+
+                <TextView
+                    android:id="@+id/adarsh_linkedin_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn"
+                    android:textStyle="italic"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/theme"
+                    app:layout_constraintTop_toBottomOf="@id/adarsh_name"
+                    app:layout_constraintStart_toEndOf="@id/adarsh_linkedin_logo"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Aniketcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="15dp"
+            android:elevation="5dp"
+            android:background="@drawable/splashbackground"
+            app:layout_constraintTop_toBottomOf="@id/anujcard"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/aniket_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/aniket"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/aniket_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aniket Shukla"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="@color/theme"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+
+                    app:layout_constraintStart_toEndOf="@id/aniket_pic"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/aniket_linkedin_logo"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/linkedin_logo"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/aniket_name"
+                    app:layout_constraintStart_toEndOf="@id/aniket_pic"
+                    />
+
+                <TextView
+                    android:id="@+id/aniket_linkedin_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LinkedIn"
+                    android:textStyle="italic"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/theme"
+                    app:layout_constraintTop_toBottomOf="@id/aniket_name"
+                    app:layout_constraintStart_toEndOf="@id/aniket_linkedin_logo"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/anujcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginHorizontal="15dp"
+                    app:cardCornerRadius="15dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/splashbackground"
+                    app:layout_constraintTop_toBottomOf="@id/adarshcard"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/anuj_pic"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/anuj"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            />
+
+                        <TextView
+                            android:id="@+id/anuj_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anuj Pratap Singh"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:textColor="@color/theme"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+
+                            app:layout_constraintStart_toEndOf="@id/anuj_pic"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
+
+                        <ImageView
+                            android:id="@+id/anuj_linkedin_logo"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/linkedin_logo"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            app:layout_constraintTop_toBottomOf="@+id/anuj_name"
+                            app:layout_constraintStart_toEndOf="@id/anuj_pic"
+                            />
+
+                        <TextView
+                            android:id="@+id/anuj_linkedin_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LinkedIn"
+                            android:textStyle="italic"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/theme"
+                            app:layout_constraintTop_toBottomOf="@id/anuj_name"
+                            app:layout_constraintStart_toEndOf="@id/anuj_linkedin_logo"
+                            />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

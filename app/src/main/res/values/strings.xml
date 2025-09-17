@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Krishi Mitra</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="location">Location</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="problemstatement">Crop diseases pose a serious threat to agricultural productivity, often leading to reduced yields and financial losses for farmers. To address this, we propose an AI-powered mobile application built using Kotlin that enables early detection and management of crop diseases. The app uses deep learning models to analyze images of infected plants captured through the user\'s smartphone camera, accurately predicting the type of disease and providing clear, farmer-friendly treatment recommendations. It features a diagnosis history section to help farmers track crop health over time and make informed decisions. Designed with an intuitive interface and support for local languages, the application ensures accessibility and practical usability, empowering farmers with timely, actionable insights to mitigate risks and protect their crops.</string>
+    <string name="developedby">Developed with 💚 \n 📧 Contact : \nadarsh2404mishra@gmail.com</string>
+
+        <string name="crop_image_desc">Crop image</string>
+        <string name="location_field_a">Location: Field A</string>
+        <string name="scanned_date">Scanned: 2025-05-05 14:30</string>
+        <string name="coordinates">Coords: 28.67,77.45</string>
+        <string name="temperature">Temp: 30°C</string>
+        <string name="humidity">Humidity: 65%</string>
+        <string name="pressure">Pressure: 1012 hPa</string>
+        <string name="early_blight">Early Blight</string>
+        <string name="early_blight_localized">प्रारंभिक क्षय</string>
+        <string name="transmission_fungal">Transmission: Fungal</string>
+        <string name="common_symptoms">Common Symptoms</string>
+        <string name="quick_advice">Quick Advice</string>
+        <string name="immediate_action">Immediate Action</string>
+        <string name="recommended_treatments">Recommended Treatments</string>
+        <string name="precautions">Precautions</string>
+        <string name="natural_remedies">Natural Remedies</string>
+        <string name="weather_advice">Weather-based Advice</string>
+        <string name="follow_up">Follow-Up and Monitoring</string>
+        <string name="expected_recovery">Expected Recovery: 7–10 days</string>
+        <string name="signs_of_improvement">Signs: No new lesions</string>
+        <string name="know_more">Know More</string>
+        <string name="sample_text">Sample text</string>
+        <string name="brand_name">Captain WP</string>
+        <string name="scientific_name">Captan</string>
+        <string name="dosage">1.5 g/L</string>
+        <string name="application_method">Spray pre-bloom</string>
+        <string name="additional_notes">Apply early morning for best results</string>
+</resources>

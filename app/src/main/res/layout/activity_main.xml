@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loader"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/loader"
+        android:translationZ="1dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/bg_circle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ellipse1" />
+
+    <ImageView
+        android:id="@+id/bg_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ellipse2" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="@string/login"
+        android:layout_marginTop="124dp"
+        android:layout_marginStart="@dimen/_37sdp"
+        android:textColor="@color/theme"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="theme_btn.xml" />-->
+
+    <EditText
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_37sdp"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/input_white_bg_theme_border"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/_14sdp"
+        android:paddingVertical="13dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/theme"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/login_title"
+        app:layout_constraintTop_toBottomOf="@+id/login_title" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_37sdp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/input_white_bg_theme_border"
+        android:fontFamily="@font/montserrat_semibold"
+        android:hint="Password"
+        android:textColorHint="@color/theme"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/_14sdp"
+        android:paddingVertical="13dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:drawableEnd="@drawable/ic_eye_closed"
+    android:drawableTint="@color/theme"
+    android:drawablePadding="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:visibility="visible"
+    app:layout_constraintEnd_toEndOf="@+id/email_et"
+    app:layout_constraintStart_toStartOf="@+id/email_et"
+    app:layout_constraintTop_toBottomOf="@+id/email_et" />
+
+
+    <TextView
+        android:id="@+id/forgotPasswordTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Forgot Password ? "
+        android:layout_marginEnd="@dimen/_37sdp"
+        android:textColor="@color/hint"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password_et"
+        app:layout_constraintTop_toBottomOf="@+id/password_et" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/theme_btn"
+        android:text="@string/login"
+        android:layout_marginHorizontal="@dimen/_37sdp"
+        android:layout_marginTop="48dp"
+        app:backgroundTint="@color/theme"
+        app:rippleColor="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="@+id/password_et"
+        app:layout_constraintStart_toStartOf="@+id/password_et"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordTv"
+        />
+
+    <TextView
+        android:id="@+id/dont_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Don't have an account? "
+        android:textColor="@color/hint"
+        app:layout_goneMarginStart="@dimen/_4sdp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn" />
+
+    <TextView
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Sign Up"
+        android:textColor="@color/theme"
+        android:clickable="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/dont_have_account"
+        app:layout_constraintStart_toEndOf="@+id/dont_have_account"
+        app:layout_constraintTop_toTopOf="@+id/dont_have_account" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="1dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="@dimen/_57sdp"
+        android:background="@color/theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dont_have_account" />
+
+    <TextView
+        android:id="@+id/or_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="OR"
+        android:textColor="@color/hint"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/divider_1"
+        app:layout_constraintEnd_toStartOf="@+id/divider_2"
+        app:layout_constraintStart_toEndOf="@+id/divider_1"
+        app:layout_constraintTop_toTopOf="@+id/divider_1" />
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="1dp"
+        android:background="@color/theme"
+        android:layout_marginEnd="@dimen/_57sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/or_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/or_tv" />
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_with_google_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_37sdp"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="13sp"
+        android:text="Log in with Google"
+        android:textColor="@color/hint"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        app:cornerRadius="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or_tv" />
+
+    <ImageView
+        android:id="@+id/google_ic_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_18ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/login_with_google_btn"
+        app:layout_constraintStart_toStartOf="@+id/login_with_google_btn"
+        app:layout_constraintTop_toTopOf="@+id/login_with_google_btn"
+        app:srcCompat="@drawable/google"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
