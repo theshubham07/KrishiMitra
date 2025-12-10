@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile_ic"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/captureFragment"
+        android:icon="@drawable/camera_ic"
+        android:title="Capture" />
+
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/history_ic"
+        android:title="History" />
+
+    <item android:id="@+id/aboutFragment"
+        android:icon="@drawable/info_icon"
+        android:title="About" />
+
+</menu>

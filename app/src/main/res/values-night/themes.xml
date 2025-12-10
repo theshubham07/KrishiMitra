@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode -->
+    <style name="Base.Theme.KrishiMitra" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here -->
+        <!-- Splash screen background for pre-Android 12 in dark mode -->
+<!--        <item name="android:windowBackground">@drawable/splashbackground</item>-->
+        <!-- Other dark mode theme attributes -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- Theme for SplashActivity in dark mode -->
+    <style name="Theme.KrishiMitra.Splash" parent="Base.Theme.KrishiMitra">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/splashbackground</item>
+    </style>
+
+    <!-- Theme for MainActivity and other activities in dark mode -->
+    <style name="Theme.KrishiMitra" parent="Base.Theme.KrishiMitra" />
+</resources>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.KrishiMitra" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- Splash screen background for pre-Android 12 -->
+<!--        <item name="android:windowBackground">@drawable/splashbackground</item>-->
+        <!-- Other theme attributes (e.g., colors) -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Theme for SplashActivity -->
+    <style name="Theme.KrishiMitra.Splash" parent="Base.Theme.KrishiMitra">
+        <!-- Ensure no action bar for splash screen -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- Use the same windowBackground for consistency -->
+        <item name="android:windowBackground">@drawable/splashbackground</item>
+    </style>
+
+    <!-- Theme for MainActivity and other activities -->
+    <style name="Theme.KrishiMitra" parent="Base.Theme.KrishiMitra" />
+</resources>
