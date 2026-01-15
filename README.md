@@ -63,7 +63,6 @@ By leveraging **TensorFlow**, **Firebase**, and **transfer learning models (ResN
 
 ### 👨‍🌾 About Section
 <p align="center">
-  <img src="/assets/about_us.jpg" alt="About Us" width="250" height="500"/>
   <img src="/assets/about_us_2.jpg" alt="About Us Team Info" width="250" height="500"/>
 </p>
 
